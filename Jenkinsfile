@@ -1,13 +1,15 @@
 pipeline {
     agent any
+	environment { 
+        shyam= 'redhat'
+    }
 
     stages {
-        stage('print the linux command output') {
+        stage('run my custom variable') {
             steps {
-                sh 'echo $BUILD_ID'
-				sh 'cal'
+				sh 'echo $shyam'
 				sh 'date'
             }
         }
+		
     }
-}
