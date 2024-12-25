@@ -20,7 +20,7 @@ pipeline {
 				sh 'echo $person'
             }
         }
-        stage('run my choice parametrised') {
+        stage('check your choice') {
             steps {
 				sh 'echo $mychoice'
 				
