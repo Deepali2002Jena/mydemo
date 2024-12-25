@@ -4,7 +4,7 @@ pipeline {
         shyam= 'redhat'
     }
 	parameters { 
-	 string(name: 'person', defaultValue: 'Deepali Jena', description: 'how are babes')
+	 string(name: "person", defaultValue: 'Deepali Jena', description: 'how are babes')
 	}
 
     stages {
