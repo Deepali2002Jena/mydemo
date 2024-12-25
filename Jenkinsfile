@@ -4,7 +4,8 @@ pipeline {
         shyam= 'redhat'
     }
 	parameters { 
-	 string(name: "person", defaultValue: 'Deepali Jena', description: 'how are babes')
+	 string(name: "person", defaultValue: "Deepali Jena", description: "how are babes")
+	 choice(name: "mychoice", choices: "debug/nrelerase", description: "choose build type")
 	}
 
     stages {
@@ -19,7 +20,11 @@ pipeline {
 				sh 'echo $person'
             }
         }
-		
+        stage('run my choice parametrised') {
+            steps {
+				sh 'echo please choose my best option: $mychoice'
+				
+            }
+        }
     }
 }
-
