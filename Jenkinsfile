@@ -6,7 +6,7 @@ pipeline {
 		stages{
             steps {
                 sh 'echo "Service user is $ SERVICE_CREDS_USR"'
-                sh 'echo "Service password is $ SERVICE_CREDS_PSW"
+                sh 'echo "Service password is $ SERVICE_CREDS_PSW"'
             }
 		}
 	}
