@@ -22,7 +22,7 @@ pipeline {
         }
         stage('run my choice parametrised') {
             steps {
-				sh 'echo please choose my best option: $mychoice'
+				sh 'echo $mychoice'
 				
             }
         }
