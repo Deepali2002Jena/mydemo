@@ -6,8 +6,8 @@ pipeline {
 		stages{
 		   stage('Load credential'){
             steps {
-                sh 'echo "Service user is $ SERVICE_CREDS_USR"'
-                sh 'echo "Service password is $ SERVICE_CREDS_PSW"'
+                sh 'echo $SERVICE_CREDS_USR'
+                sh 'echo $SERVICE_CREDS_PSW'
             }
 		}
 	}
