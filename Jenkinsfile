@@ -5,7 +5,7 @@ pipeline {
     }
 	parameters { 
 	 string(name: "person", defaultValue: "Deepali Jena", description: "how are babes")
-	 choice(name: "mychoice", choices: "debug/n relerase", description: "choose build type")
+	 choice(name: "mychoice", choices: "debug\nrelease", description: "choose build type")
 	}
 
     stages {
